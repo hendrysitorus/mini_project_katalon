@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC4_UsernameNullLogin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d5560746-eaa4-4cc6-8154-3d7fc5b24106</testCaseGuid>
+</TestCaseEntity>
