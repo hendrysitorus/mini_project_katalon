@@ -21,11 +21,15 @@ WebUI.openBrowser('https://the-internet.herokuapp.com/login')
 
 WebUI.setText(findTestObject('Login Page/input Username'), 'tomsmith')
 
-WebUI.setText(findTestObject('Login Page/input Password'), '123Super')
+WebUI.setText(findTestObject('Login Page/input Password'), 'SuperSecretPassword!')
 
 WebUI.click(findTestObject('Login Page/button Login'))
 
-WebUI.verifyElementPresent(findTestObject('Login Page/alert Password Invalid'), 0)
+WebUI.verifyElementPresent(findTestObject('Login Page/alert Login Succes'), 0)
+
+WebUI.click(findTestObject('Login Page/button Logout'))
+
+WebUI.verifyElementPresent(findTestObject('Login Page/text Login Page'), 0)
 
 WebUI.closeBrowser()
 
